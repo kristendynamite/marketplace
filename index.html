@@ -10,30 +10,33 @@
   </head>
   <body>
     <div class="container">
-      <h1>Place your smoothie order:</h1>
+      <h1>Make your smoothie order:</h1>
       <form id="orderForm">
 
         <!-- Ingredients -->
         <div class="checkbox">
-          <label><input type="checkbox" value=""></label>
-          <label><input type="checkbox" value=""></label>
-          <label><input type="checkbox" value=""></label>
-          <label><input type="checkbox" value=""></label>
-          <label><input type="checkbox" value=""></label>
+          <h2>Choose your ingredients:</h2>
+          <label><input type="checkbox" value="">A whole turkey</label>
+          <label><input type="checkbox" value="">Maple syrup</label>
+          <label><input type="checkbox" value="">Lint from a sweater</label>
+          <label><input type="checkbox" value="">Unicorn farts</label>
+          <label><input type="checkbox" value="">A strawberry</label>
         </div>
 
         <!-- Size -->
-        <div class="radio">
-          <label><input type="radio" name="optradio"></label>
-          <label><input type="radio" name="optradio"></label>
-          <label><input type="radio" name="optradio"></label>
+        <div class="radioSize">
+          <h2>Pick your size:</h2>
+          <label><input type="radio" name="size" value="sotiny" checked>So tiny</label>
+          <label><input type="radio" name="size" value="regular" checked>Regular</label>
+          <label><input type="radio" name="size" value="sobig">So big</label>
         </div>
 
         <!-- Shipping -->
-        <div class="radio">
-          <label><input type="radio" name="optradio"></label>
-          <label><input type="radio" name="optradio"></label>
-          <label><input type="radio" name="optradio"></label>
+        <div class="radioShipping">
+          <h2>Shipping</h2>
+          <label><input type="radio" name="optradio">Pony express $6</label>
+          <label><input type="radio" name="optradio">Air mail $10</label>
+          <label><input type="radio" name="optradio">Carrier pigeon $100</label>
         </div>
 
         <!-- Name -->
@@ -47,9 +50,21 @@
           <label for="address">Your Shipping Address</label>
           <input id="address" class="form-control" type="text">
         </div>
-
+        <button type="submit" class="btn">Place your order!</button>
       </form>
+      <div class="confirmationPage">
+        <h1>Your Order</h1>
+        <ul id="ingredients">
+        </ul>
+        <div class="sizeRadio">
+        </div>
+        <div class="shippingRadio">
+        </div>
+        <div class="name">
+        </div>
+        <div class="address">
+        </div>
+      </div>
     </div>
-
   </body>
 </html>
